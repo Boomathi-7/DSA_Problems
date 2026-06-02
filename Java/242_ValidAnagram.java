@@ -1,5 +1,5 @@
 class Solution {
-    public boolean isAnagram(String s, String t) {
+    public boolean validAnagram(String s, String t) {
         char[] s_str = s.toCharArray();
         char[] t_str = t.toCharArray();
         Arrays.sort(s_str);
