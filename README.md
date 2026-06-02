@@ -1,1 +1,1 @@
-# DSA-Neetcode_Problems
+# DSA-Problems
