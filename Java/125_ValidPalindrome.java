@@ -1,19 +1,21 @@
-// class Solution {
-//     public boolean isPalindrome(String s) {
-//         StringBuilder str = new StringBuilder();
+// Method 1
+class Solution {
+    public boolean isPalindrome(String s) {
+        StringBuilder str = new StringBuilder();
 
-//         for (char c: s.toCharArray()){
-//             if (Character.isLetterOrDigit(c)){
-//                 str.append(Character.toLowerCase(c));
-//             }
-//         }
-//         String st = str.toString();
+        for (char c: s.toCharArray()){
+            if (Character.isLetterOrDigit(c)){
+                str.append(Character.toLowerCase(c));
+            }
+        }
+        String st = str.toString();
 
-//         String reverse = new StringBuilder(st).reverse().toString();
-//         return st.equals(reverse);
-//     }
-// }
+        String reverse = new StringBuilder(st).reverse().toString();
+        return st.equals(reverse);
+    }
+}
 
+// Method 2
 class Solution {
     public boolean isPalindrome(String s) {
         StringBuilder str = new StringBuilder();
