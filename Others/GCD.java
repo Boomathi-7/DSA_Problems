@@ -38,3 +38,23 @@ public class Main{
         System.out.println("GCD: "+n1);
     }
 }
+
+// Using Built-in Method
+// BigInteger - used to avoid Integer overflow
+
+import java.util.*;
+import java.math.BigInteger;
+public class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int n1 = scan.nextInt();
+        int n2 = scan.nextInt();
+        
+        BigInteger b1 = BigInteger.valueOf(n1);
+        BigInteger b2 = BigInteger.valueOf(n2);
+        
+        BigInteger gcd = b1.gcd(b2);
+        
+        System.out.println("GCD: " + gcd);
+    }
+}
