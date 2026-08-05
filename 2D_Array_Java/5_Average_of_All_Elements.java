@@ -19,7 +19,7 @@ class Main{
                 sum += matrix[i][j];
             }
         }
-        int avg = sum/(m+n);
+        int avg = sum/(m*n);
         System.out.println(avg);
     }
 }
