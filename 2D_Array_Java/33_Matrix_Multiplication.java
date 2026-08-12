@@ -20,6 +20,7 @@ class Main{
                 matrix2[i][j] = scan.nextInt();
             }
         }
+        scan.close();
 
         if (n1 != m2){
             System.out.println("Matrix Multiplication not possible.");
