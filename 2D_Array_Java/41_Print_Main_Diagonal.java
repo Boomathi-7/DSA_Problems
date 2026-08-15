@@ -13,6 +13,10 @@ class Main{
             }
         }
         scan.close();
+        if (m != n){
+            System.out.println("Not a Square Matrix.");
+            return;
+        }
 
         // Optimal Method
         for (int i = 0; i < m; i++){
