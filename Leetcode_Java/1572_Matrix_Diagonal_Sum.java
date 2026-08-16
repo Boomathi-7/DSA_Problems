@@ -1,13 +1,16 @@
 class Solution {
-    public int[][] transpose(int[][] matrix) {
-        int m = matrix.length;
-        int n = matrix[0].length;
-        int[][] transpose = new int[n][m];
+    public int diagonalSum(int[][] mat) {
+        int m = mat.length;
+        int n = mat[0].length;
+        int sum = 0;
         for (int i = 0; i < m; i++){
-            for (int j = 0; j < n; j++){
-                transpose[j][i] = matrix[i][j];
+            sum += mat[i][i];
+        }
+        for (int i = 0; i < m; i++){
+            if (i != n-1-i){
+                sum += mat[i][n-1-i];
             }
         }
-        return transpose;
+        return sum;
     }
 }
