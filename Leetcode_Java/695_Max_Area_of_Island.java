@@ -5,6 +5,7 @@ class Solution {
         }
         grid[i][j] = 0;
         int area = 1;
+        // Recursive function
         area += DFS(grid, i-1, j);
         area += DFS(grid, i+1, j);
         area += DFS(grid, i, j-1);
